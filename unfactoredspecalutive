@@ -1,0 +1,55 @@
+public interface Animal {
+
+    void eat();
+
+    void sleep();
+
+}
+
+public abstract class Mammal implements Animal {
+
+    void giveBirth() {
+
+    }
+
+}
+
+public abstract class Reptile implements Animal {
+
+    void layEggs() {
+
+    }
+
+}
+
+public class Dog extends Mammal {
+
+    public void eat() {
+
+    }
+    public void sleep() {
+
+    }
+
+    void bark() {
+    
+    }
+
+}
+
+public class Snake extends Reptile {
+
+    public void eat() {
+
+    }
+
+    public void sleep() {
+
+    }
+
+    void hiss() {
+    
+    }
+
+}
+
