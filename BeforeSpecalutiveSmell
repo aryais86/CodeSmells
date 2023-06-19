@@ -9,7 +9,7 @@ public interface Animal {
 public abstract class Mammal implements Animal {
 
     void giveBirth() {
-        System.out.println("Baby Mammal is born!")
+        System.out.println("Baby Mammal is born!");
     }
 
 }
@@ -17,7 +17,7 @@ public abstract class Mammal implements Animal {
 public abstract class Reptile implements Animal {
 
     void layEggs() {
-        System.out.println("Baby Reptile is born!")
+        System.out.println("Baby Reptile is born!");
     }
 
 }
@@ -25,14 +25,14 @@ public abstract class Reptile implements Animal {
 public class Dog extends Mammal {
 
     public void eat() {
-        System.out.println("Dog is Eating")
+        System.out.println("Dog is Eating");
     }
     public void sleep() {
-        System.out.println("Zzzrzzzzrzz")
+        System.out.println("Zzzrzzzzrzz");
     }
 
     void bark() {
-        System.out.println("Guguk")
+        System.out.println("Guguk");
     }
 
 }
@@ -40,15 +40,15 @@ public class Dog extends Mammal {
 public class Snake extends Reptile {
 
     public void eat() {
-        System.out.println("Snake is Eating")
+        System.out.println("Snake is Eating");
     }
 
     public void sleep() {
-        System.out.println("Zzzszzzzszz")
+        System.out.println("Zzzszzzzszz");
     }
 
     void hiss() {
-    
+        System.out.println("hsssssssss");
     }
 
 }
