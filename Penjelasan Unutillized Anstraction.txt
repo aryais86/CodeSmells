@@ -1,0 +1,3 @@
+Unutillized Abstraction
+Pada before ada class status yang tidak digunakan sama sekali.
+Sehingga pada refactor, class ini dihapus untuk melancarkan code yang dibuat.

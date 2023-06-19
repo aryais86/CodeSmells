@@ -1,0 +1,4 @@
+Unnecessary Abstraction
+Pada Before ada 2 class yaitu BlueButton dan RedButton.
+Refactor yang dilakukan adalah membuat class baru yneg menggabungkan class diatas sehingga jika button dengan warna tertentu
+dibutuhkan, class gabungan ini hanya dapat dipanggil saja.
