@@ -1,0 +1,4 @@
+Pada file before, jika ingin membuat role baru, class user harus dipanggil dan jika ingin menambah user baru
+class role dipanggil. Hal ini menyebabkan Cyclical Dependent Modularization.
+Refactor yang digunakan adalah membuat class baru UserRole yang gunanya untuk memanggil user dari class user dan role dari class role.
+Dengan adanya ini, bentuk siklikal tidak akan terjadi.
