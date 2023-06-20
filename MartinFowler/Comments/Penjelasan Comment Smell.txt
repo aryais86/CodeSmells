@@ -1,0 +1,2 @@
+Comment yang di berikan before refactor tidak menjelaskan secara jelas fungsi method
+Setelah refactor, method dijelaskan secara lebih jelas
