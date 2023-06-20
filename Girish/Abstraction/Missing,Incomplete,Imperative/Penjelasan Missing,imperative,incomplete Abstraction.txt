@@ -1,0 +1,11 @@
+The main method is broken down into smaller, more focused methods, improving readability and maintainability.
+The getToken method retrieves the token from the environment variable and throws an exception if it's not found, encapsulating the token retrieval logic.
+The printLoginDetails method takes care of printing the login details on the ReadyEvent.
+The handleSlashCommands method handles the registration and handling of slash commands.
+The registerCommands method retrieves the application ID and performs the bulk overwrite of global application commands.
+Helper methods like createCommandRequest and createOption are introduced to simplify command creation.
+The use of flatMap and then allows for sequential execution of asynchronous operations using Reactor's Mono.
+
+The savedData field is encapsulated and made private, following the principle of encapsulation.
+Methods like retrieve, delete, contains, clear, and getSize are provided to interact with the stored data in a more controlled and abstracted manner.
+The retrieve method returns an Optional<String> to handle cases where the requested data might not exist.
