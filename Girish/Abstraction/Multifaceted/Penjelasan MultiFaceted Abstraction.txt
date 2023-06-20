@@ -1,0 +1,3 @@
+Multifaceted Abstarction
+Pada Before, pada method print terdapat fungsi dimana dalam method tersebut memiliki 2 tanggung jawab, yaitu print full dan border, pada satu method.
+Refactor yang dilakukan adalah memisahkan kedua fungsi tersebut menjadi 2 buah method yaitu printFull dan printBorder.
