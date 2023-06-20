@@ -1,0 +1,8 @@
+Kami memiliki fungsi addItem untuk menambahkan item ke dalam keranjang, removeItem untuk menghapus item, calculateTotal untuk menghitung total harga, dan printItems untuk mencetak item-item yang ada dalam keranjang.
+Terdapat juga metode main yang digunakan untuk menguji fungsionalitas ShoppingCart.
+
+Kelas ini memiliki variabel name untuk nama item dan price untuk harga item.
+Terdapat juga metode getName untuk mendapatkan nama item dan getPrice untuk mendapatkan harga item.
+Dengan memisahkan kelas-kelas ke dalam file terpisah, kami meningkatkan struktur dan keterbacaan kode. Setiap kelas memiliki file sendiri, sehingga memudahkan dalam pemeliharaan dan pengembangan kode di masa mendatang.
+
+Kelas ShoppingCart digunakan untuk mengelola keranjang belanja. kita dapat menambahkan atau menghapus item dari keranjang, menghitung total harga, dan mencetak item-item yang ada di dalamnya. Dalam fungsi main, kami melakukan beberapa pengujian dengan menambahkan item ke keranjang, mencetak item yang ada, dan menghitung total harganya.
