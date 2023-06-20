@@ -1,0 +1,7 @@
+Bidang lebar dan tinggi sekarang dinyatakan sebagai private, yang membatasi akses langsung dari luar kelas. hal Ini kita terapkan untuk mencegah class atau kode lain memodifikasi bagian ini secara langsung.
+
+Metode (getWidth(), setWidth(), getHeight(), setHeight()) disediakan untuk mengakses dan memodifikasi bidang pribadi. Metode ini memungkinkan akses terkontrol ke keadaan internal objek Rectangle.
+
+Metode calculateArea() dan calculatePerimeter() dibiarkan sebagai publik, karena mereka dimaksudkan untuk diakses secara eksternal untuk melakukan perhitungan berdasarkan nilai lebar dan tinggi.
+
+Dengan enkapsulasi, kita dapat memisahkan detail implementasi internal class Rectangle dari kode yang menggunakannya. Ini melindungi class dari modifikasi yang tidak diinginkan dan memungkinkan kita untuk mempertahankan kontrol yang lebih baik atas behaviournya.
