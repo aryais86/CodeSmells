@@ -1,5 +1,0 @@
-Terdapat perbaikan yang dilakukan pada kode tersebut. Sekarang, variabel-variabel dalam kelas DataMahasiswa telah dibuat menjadi pribadi (private) dan dienkapsulasi. Untuk mengakses dan mengubah nilainya, kita menggunakan metode getter dan setter yang telah disediakan. Dengan begitu, data diakses melalui metode-metode tersebut daripada mengakses variabel-variabel secara langsung.
-
-Selanjutnya, pada kelas Mahasiswa, kita juga menggunakan metode getter dan setter untuk mengelola objek DataMahasiswa. Kini kelas ini tidak lagi mengakses variabel-variabel dalam objek DataMahasiswa secara langsung, sehingga menerapkan konsep enkapsulasi yang lebih baik.
-
-Dengan memanfaatkan enkapsulasi dan metode getter serta setter yang tepat, kita berhasil meningkatkan pemeliharaan dan fleksibilitas kode. Perubahan pada implementasi internal kelas DataMahasiswa dapat dilakukan tanpa mempengaruhi kelas Mahasiswa atau bagian lain dari kode yang menggunakan kelas Mahasiswa.
