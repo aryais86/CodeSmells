@@ -1,0 +1,49 @@
+class PriceCalculator {
+  calculateTotalPrice(items) {
+    let totalPrice = 0;
+    for (let i = 0; i < items.length; i++) {
+      const item = items[i];
+      item.tax = this.calculateTax(item.price);
+      totalPrice += item.price + item.tax;
+    }
+    return totalPrice;
+  }
+
+  applyDiscount(items) {
+    for (let i = 0; i < items.length; i++) {
+      const item = items[i];
+      item.discount = this.calculateDiscount(item.price);
+      item.price -= item.discount;
+    }
+  }
+
+  calculateTax(price) {
+    if (price > 10) {
+      return price * 0.1;
+    } else {
+      return price * 0.05;
+    }
+  }
+
+  calculateDiscount(price) {
+    if (price > 50) {
+      return price * 0.1;
+    } else {
+      return price * 0.05;
+    }
+  }
+}
+
+// Usage example:
+const items = [
+  { price: 15 },
+  { price: 8 },
+  { price: 60 }
+];
+
+const calculator = new PriceCalculator();
+calculator.applyDiscount(items);
+const totalPrice = calculator.calculateTotalPrice(items);
+
+console.log(items);
+console.log('Total Price:', totalPrice);
