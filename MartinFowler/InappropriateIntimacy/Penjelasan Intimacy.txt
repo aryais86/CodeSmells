@@ -1,0 +1,9 @@
+1. Di kelas `BankAccount`, bagian Owner masih dipertahankan sebagai referensi ke kelas `Customer`, tetapi sekarang bersifat private. Ini membatasi akses langsung dari luar class untuk mencegah inappropriate intimacy.
+
+2. Metode pengambil publik getOwner() disediakan untuk mengakses bidang `Owner`. Hal ini memungkinkan akses terkontrol ke objek Customer yang terkait dengan rekening bank.
+
+3. Metode penyetel publik setOwner(Customer owner) ditambahkan untuk mengatur bidang `Owner`. Namun, setter menyertakan pemeriksaan nol untuk mencegah pengaturan pemilik nol. Ini memastikan bahwa rekening bank selalu memiliki pemilik yang valid.
+
+4. Dalam metode `displayAccountInfo()`, owner.name diganti dengan getOwner().getName() untuk mengakses nama Owner melalui metode getter. Ini semakin mengurangi ketergantungan langsung pada kelas `Owner`.
+
+Dengan merangkum bidang Owner dan menyediakan metode pengambil dan pembuat yang sesuai, kita dapat mengurangi inappropriate intimacy antara kelas BankAccount dan `Customer`.
