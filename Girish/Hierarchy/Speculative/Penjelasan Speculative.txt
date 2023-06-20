@@ -1,0 +1,3 @@
+Terjadi Speculative Hierarchy pada file before karena class reptile dan mammal hanya dibuat secara spekulasi/ ditebak di awal bahwa class itu akan digunakan
+Tetapi ternyata tidak.
+Refactor yang dilakukan adalah menghapus class tersebut.
