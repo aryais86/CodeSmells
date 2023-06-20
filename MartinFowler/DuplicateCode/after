@@ -1,0 +1,62 @@
+import java.util.Scanner;
+
+public class ShapeCalculator {
+    public static void main(String[] args) {
+        menu();
+    }
+
+    public static void menu() {
+        Scanner scanner = new Scanner(System.in);
+        int input;
+
+        do {
+            System.out.println("Menu\n========");
+            System.out.println("1. Calculate Rectangle Area");
+            System.out.println("2. Calculate Square Area");
+            System.out.println("3. Calculate Circle Area");
+            System.out.println("0. Exit");
+            System.out.print("Input: ");
+
+            input = scanner.nextInt();
+            switch (input) {
+                case 1:
+                    calculateArea(scanner, "rectangle");
+                    break;
+                case 2:
+                    calculateArea(scanner, "square");
+                    break;
+                case 3:
+                    calculateArea(scanner, "circle");
+                    break;
+            }
+        } while (input != 0);
+
+        scanner.close();
+    }
+
+    public static void calculateArea(Scanner scanner, String shape) {
+        double area = 0;
+
+        switch (shape) {
+            case "rectangle":
+                System.out.print("Enter width: ");
+                int width = scanner.nextInt();
+                System.out.print("Enter height: ");
+                int height = scanner.nextInt();
+                area = height * width;
+                break;
+            case "square":
+                System.out.print("Enter side length: ");
+                int side = scanner.nextInt();
+                area = side * side;
+                break;
+            case "circle":
+                System.out.print("Enter radius: ");
+                double radius = scanner.nextDouble();
+                area = Math.PI * radius * radius;
+                break;
+        }
+
+        System.out.println("Area of " + shape + ": " + area);
+    }
+}
