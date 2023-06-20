@@ -1,0 +1,3 @@
+Pada file before terdapat Duplicate code pada method calculate Area.
+Untuk menghindari ini dilakukannya refactor dimana switch statement dibuat
+yang bergantung oleh bentuk yang dipilih
