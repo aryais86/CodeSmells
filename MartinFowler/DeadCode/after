@@ -1,0 +1,14 @@
+package dead_code;
+
+import java.util.*;
+
+public class DiscountCalculator {
+	public double setFinalPrice(int priceBefore) {
+		
+		double finalPrice=0;
+
+		finalPrice = priceBefore - (priceBefore*0.1);
+		
+		return finalPrice;
+	}
+}
