@@ -1,0 +1,2 @@
+Terjadi sebuah Data Clumps pada class Movies dimana class ini bertanggung jawab terhadap banyak hal(nama film dan tanggal rental)
+Refactor yang dilakukan adalah memisahkan rental dari movie.
