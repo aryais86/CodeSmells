@@ -1,0 +1,36 @@
+public class BankAccount {
+    private String accountNumber;
+    private double balance;
+    private Customer owner;
+
+    public BankAccount(String accountNumber, double balance, Customer owner) {
+        this.accountNumber = accountNumber;
+        this.balance = balance;
+        this.owner = owner;
+    }
+
+    public void deposit(double amount) {
+        balance += amount;
+    }
+
+    public void withdraw(double amount) {
+        balance -= amount;
+    }
+
+    public void displayAccountInfo() {
+        System.out.println("Account Number: " + accountNumber);
+        System.out.println("Balance: $" + balance);
+        System.out.println("Owner: " + owner.name);
+    }
+}
+
+public class Customer {
+        public String name;
+        public String address;
+    
+        public Customer(String name, String address) {
+            this.name = name;
+            this.address = address;
+        }
+    
+}
