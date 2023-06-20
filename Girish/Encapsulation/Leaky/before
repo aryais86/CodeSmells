@@ -1,0 +1,70 @@
+import java.util.Vector;
+
+class ToDo {
+    //....
+    private String name;
+
+    public ToDo(String name) {
+        super();
+        this.name = name;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    //....
+
+}
+
+public class ToDoList {
+    //....
+    private Vector<ToDo> list;
+
+    public ToDoList() {
+        list = new Vector<>();
+    }
+
+    public Vector<ToDo> getlist() {
+        // shallow copy -> deep copy
+        return list;
+    }
+
+    public ToDo getByName(String name) {
+        for (ToDo toDo : list) {
+            if(toDo.getName().equals(name)) return toDo;
+        }
+
+        return null;
+    }
+
+    public void add(ToDo t) {
+        list.add(t);
+    }
+    
+    //....
+}
+
+public class ToDoListTest {
+     void test() {
+         ToDoList td = new ToDoList();
+
+         // Vector<ToDo> list = td.getlist(); //(belakangn)
+
+         td.add(new ToDo("a"));
+         assert(td.getByName("a") != null);
+
+         Vector<ToDo> list = td.getlist();
+         list.elementAt(0).setName ("b");
+
+         assert(td.getByName("b") != null);
+
+     }
+
+ 
+
+}
