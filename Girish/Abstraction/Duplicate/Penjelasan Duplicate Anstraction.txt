@@ -1,0 +1,4 @@
+Duplicate Abstraction
+Pada Before class vehicle dan motorcycle memiliki beberapa method yang sama seperti model,color dan stock.
+Maka dari itu refactor yang dilakukan adalah menghapus method pada motorcyle yang sekarang hanya memiliki satu method yaitu cylinderCapacity.
+Lalu ada class motorcyle dimana class tersebut extend untuk mengambil method model,color dan stock.
