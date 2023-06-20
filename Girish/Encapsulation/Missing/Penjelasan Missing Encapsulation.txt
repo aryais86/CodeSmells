@@ -1,0 +1,4 @@
+}
+
+In the code provided, there is a missing encapsulation code smell because the class's fields (name, gender, age, salary) are declared as public, allowing direct access and modification from outside the class. To address this issue, we can refactor the code by encapsulating the fields and providing access to them through getters and setters.
+In the refactored code, the fields of the Employee class (name, gender, age, salary) are made private, and getter and setter methods are provided to access and modify these fields. This encapsulation ensures that the internal state of the Employee object is protected and can be accessed and modified only through the defined methods.
