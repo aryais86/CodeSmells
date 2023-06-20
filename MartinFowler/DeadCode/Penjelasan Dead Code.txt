@@ -1,0 +1,5 @@
+Pada class DiscountCalculator terdapat Dead Code atau code yang tidak lagi digunakan yaitu
+if(priceBefore>5000000) {			
+			finalPrice = priceBefore - (priceBefore*0.2);
+		}
+Refactor yang dilakukan adalah menghapus code line ini.
