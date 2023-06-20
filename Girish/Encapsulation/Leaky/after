@@ -1,0 +1,66 @@
+package leaky_Encapsulation_After;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Vector;
+
+class ToDo {
+    private String name;
+
+    public ToDo(String name) {
+        this.name = name;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+}
+
+public class ToDoList {
+    private Vector<ToDo> list;
+
+    public ToDoList() {
+        list = new Vector<>();
+    }
+
+    public List<ToDo> getList() {
+        // Return a deep copy of the list
+        List<ToDo> copyList = new ArrayList<>(list.size());
+        for (ToDo item : list) {
+            ToDo copyItem = new ToDo(item.getName());
+            copyList.add(copyItem);
+        }
+        return copyList;
+    }
+
+    public ToDo getByName(String name) {
+        for (ToDo toDo : list) {
+            if (toDo.getName().equals(name)) {
+                return toDo;
+            }
+        }
+        return null;
+    }
+
+    public void add(ToDo t) {
+        list.add(t);
+    }
+}
+
+public class ToDoListTest {
+    void test() {
+        ToDoList td = new ToDoList();
+
+        td.add(new ToDo("a"));
+        assert (td.getByName("a") != null);
+
+        List<ToDo> list = td.getList();
+        list.get(0).setName("b");
+
+        assert (td.getByName("b") != null);
+    }
+}
