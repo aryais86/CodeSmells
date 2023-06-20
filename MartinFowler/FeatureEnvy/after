@@ -1,0 +1,30 @@
+public class ContactInfo {
+    public String GetStreetName()
+        {
+            return "1 Medison Square";
+        }
+        public String GetCity()
+        {
+            return "NewYork";
+        }
+        public String GetState()
+        {
+            return "NY";
+        }
+      public String GetFullAddress()
+        {
+            return GetStreetName() + "," + GetCity() + "," + GetState()
+        }
+}
+public class User {
+    private ContactInfo _contactInfo;
+ 
+        User(ContactInfo contactInfo)
+        {
+            _contactInfo = contactInfo;
+        }
+        public String GetFullAddress()
+        {
+            return ContactInfo.GetFullAddress();
+        }
+}
