@@ -1,0 +1,14 @@
+public class DataMahasiswa {
+    public String NIM;
+    public String Email;
+    public String NomorTelepon;
+    //...
+}
+
+public class Mahasiswa {
+    private DataMahasiswa data;
+    
+    public String getNIM() {
+        return data.NIM;
+    }
+    //...
