@@ -1,0 +1,3 @@
+Pada file before, class User sangat bergantung sekali dengan class Contact Info untuk mengambil data alamat user.
+Refactor yang dilakukan adalah membuat method GetFullAddress pada class ContactInfo dimana class tersebut
+dapat dipanggil dalam class User.
