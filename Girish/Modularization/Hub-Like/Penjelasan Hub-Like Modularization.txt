@@ -1,0 +1,4 @@
+Pada file before jika ingin mengambil sebuah komponen, harus disertai dengan mediator yang menjadikan mediator
+sebagai perantra/ hub dari pengambilan komponen. Hal ini menyebabkan smell Hub-like Modularization karena method yang digunakan
+harus melewati perantara dulu, baru method dapat dikerjakan.
+Refactor yang dilakukan adalah menghapus Mediator tersebut, agar method berjalan secara langsung terhadap komponen-komponenya. 
